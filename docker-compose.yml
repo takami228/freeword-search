@@ -1,14 +1,14 @@
 version: '3'
 services:
   elasticsearch:
-    image: elasticsearch:5.6.5
+    build: es
     environment: ['http.host=0.0.0.0', 'transport.host=127.0.0.1']
     ports: ['127.0.0.1:9200:9200']
     networks: ['elk']
     volumes:
-      - ./es_data/:/usr/share/elasticsearch/data/
+      - ./es/es_data/:/usr/share/elasticsearch/data/
   kibana:
-    image: kibana:5.6.5
+    build: kibana
     ports: ['127.0.0.1:5601:5601']
     networks: ['elk']
     depends_on: ['elasticsearch']
