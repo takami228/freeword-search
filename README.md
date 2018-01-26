@@ -13,3 +13,5 @@ docker-compose up -d
 curl -v http://localhost:9200
 curl -v http://localhost:9200/_nodes/plugins?pretty
 ```
+
+Access Kibana at [http://localhost:5601/app/kibana](http://localhost:5601/app/kibana).
