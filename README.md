@@ -1,6 +1,8 @@
 # freeword-search
 
-Run docker-compose commands.
+This repository is for docker-compose including Elasticsearch and Kibana. The version is same for Amazon ElasticSearch Service, 5.5.2.
+
+To run in local environment, run docker-compose commands.
 
 ```sh
 # Docker Build & Up
