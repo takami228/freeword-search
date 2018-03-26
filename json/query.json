@@ -1,0 +1,13 @@
+{
+    "query": {
+      "bool": {
+        "must": [
+          {
+            "match": {
+          "prj_major_cate_name": "アンケート"
+            }
+          }
+        ]
+      }
+    }
+  }
